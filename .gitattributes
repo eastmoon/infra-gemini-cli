@@ -1,0 +1,13 @@
+# Auto detect text files and perform LF normalization
+*       text=lf
+*.bat   text eol=crlf
+*.sh    text eol=lf
+*.ini   eol=lf
+*.rc    eol=lf
+*.json  eol=lf
+*.js    eol=lf
+*.jade  eol=lf
+*.html  eol=lf
+*.css   eol=lf
+*.py    eol=lf
+Dockerfile eol=lf
