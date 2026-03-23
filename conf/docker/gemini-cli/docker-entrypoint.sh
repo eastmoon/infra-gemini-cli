@@ -4,6 +4,7 @@ set -e
 # Initial gemini information
 gemini --help &> /dev/null
 
+# Do action with first parameter
 if [ "$1" = "bash" ] || [ "$1" = "sh" ]; then
     exec "$@"
 elif [ "$1" = "prompt" ]; then
