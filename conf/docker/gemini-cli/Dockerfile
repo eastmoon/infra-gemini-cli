@@ -1,5 +1,5 @@
 # Step : Install base image
-FROM node:24-slim
+FROM node:24-bookworm
 
 ## Update linux and tools
 RUN apt update -y
