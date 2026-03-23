@@ -1,0 +1,3 @@
+desc: "Run plan with markdown file in 'plan' folder."
+attr:
+  STOP-CLI-PARSER: 1
