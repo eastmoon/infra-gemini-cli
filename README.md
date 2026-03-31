@@ -12,6 +12,8 @@ Gemini CLI 需使用 Google 帳號，且訂閱方案需為 Google AI Plus、Pro�
 
 ## 指令
 
+### Docker 封裝
+
 使用 [devops-cli-framework](https://github.com/eastmoon/devops-cli-framework) 設計專案指令：
 
 + 啟動開發環境 ```do.bat dev```
@@ -22,6 +24,17 @@ Gemini CLI 需使用 Google 帳號，且訂閱方案需為 Google AI Plus、Pro�
 + 啟動常駐服務 ```do.bat srv```
 
 執行上述指令需於 [devops-cli-framework](https://github.com/eastmoon/devops-cli-framework) 專案執行 ```do pack```，封裝必要映像檔。
+
+### WSL 環境
+
+使用 Windows Subsystem for Linux ( WSL ) 模擬 Linux 環境，並確保於本機運行服務。
+
++ 啟動環境 ```wsl-env.bat```
++ 安裝程序 ```./install.sh```
+
+安裝完畢後會因為缺乏環境路徑無法使用 gemini 介面，對此，僅可離開 WSL 後再次啟動 ```wsl-env.bat``` 進入環境，即可使用
+
+設計 WSL 環境，主要運用 Google 用戶的方案；目前實際使用並未碰到卡頓的使用狀況，但會有出現幾次 WSL 服務停頓的狀態。
 
 ## 環境容器
 
