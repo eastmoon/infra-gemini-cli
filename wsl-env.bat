@@ -25,8 +25,8 @@ chcp 65001
 
 set WSL_IMAGE_DIR=C:\temp\wsl_backups
 set WSL_IMAGE_NAME=ubuntu2404.tar
-set DISTRO_NAME=ai-cli
-set DISTRO_DIR=C:\temp\wsl
+set DISTRO_NAME=gemini-cli
+set DISTRO_DIR=C:\temp\wsl\%DISTRO_NAME%
 if NOT EXIST %WSL_IMAGE_DIR%\%WSL_IMAGE_NAME% (
     echo %WSL_IMAGE_DIR%
     echo %WSL_IMAGE_NAME%
